@@ -15,7 +15,7 @@ do
 {
 
 printf("Entrer la taille du tableau > 1 et <= 50\n");
-if(scanf("%d",&tailleTableau) == 1 || (c=getchar() != '\n' && c!=EOF)){ //Changer par while
+if(scanf("%d",&tailleTableau) == 1 || (c=getchar() != '\n' && c!=EOF) && (tailleTableau  > 1 && tailleTableau  <= 50)){ //Changer par while
     for (indice = 0; indice < tailleTableau; indice++)
     {
        do 
@@ -42,7 +42,7 @@ else
   printf("Verifiez que le nombre est un entier et qu'il est compris entre 2 et 50 \n");
 }
 
-} while (tailleTableau < 2 || tailleTableau>50);
+} while (tailleTableau < 2 || tailleTableau > 50);
 
 return 0;
 }
